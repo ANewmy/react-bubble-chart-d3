@@ -103,7 +103,7 @@ export default class BubbleChart extends Component {
 
     node.append("circle")
       .attr("id", function(d) { return d.id; })
-       .attr("r", function(d) { return Math.max(30, d.r - (d.r * .04)); })
+      .attr("r", function(d) { Math.max(30, d.r - (d.r * .04)); })
      // .attr("r", function(d) { return d.r - (d.r * .04); })
       .style("fill", function(d) { return d.data.color ? d.data.color : color(nodes.indexOf(d)); })
       .style("z-index", 1)
