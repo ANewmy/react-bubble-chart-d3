@@ -33,7 +33,7 @@ export default class BubbleChart extends Component {
       height,
     } = this.props;
     return (
-      <svg width={width} height={height} />
+      <svg id="RBC" width={width} height={height} />
     )
   }
 
